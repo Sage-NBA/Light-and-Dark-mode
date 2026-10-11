@@ -17,7 +17,10 @@ function App() {
       <div className={lightMode ? "light" : "dark"}>
         {/* your whole website */}
 
-        <button onClick={() => setLightMode(!lightMode)}>
+        <button
+          className="text-5xl fixed"
+          onClick={() => setLightMode(!lightMode)}
+        >
           {lightMode ? "🌙" : "☀️"}
         </button>
       </div>
