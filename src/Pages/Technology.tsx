@@ -46,6 +46,70 @@ function Home() {
           the digital landscape.
         </p>
       </div>
+      {/* Boxes */}
+      <section className=" ">
+        <div className="md:w-120 md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
+          <button className="w-fit rounded-[100px] text-black text-[13px] light:text-white bg-white light:bg-black p-2 ">
+            01
+          </button>
+          <h1 className="mt-40">Web Development</h1>
+          <p className="font-light">
+            Our expert team crafts bespoke websites tailored to
+            <br /> your brand's need. ensuring seamless functionality
+            <br />
+            and stunning design to captivate your audience.
+          </p>
+        </div>
+        {/* 02 */}
+        <div className="md:w-170 md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
+          <button className="w-fit rounded-[100px] text-black text-[13px] light:text-white bg-white light:bg-black p-2 ">
+            02
+          </button>
+          <h1 className="mt-20">Digital Marketting Strategies</h1>
+          <p className="font-light">
+            Harness the power of targeted digital campainge designed to maximize
+            your
+            <br /> online reach and drive conversions. with our data-driven
+            appraoch delivery
+            <br />
+            measurable results every time.
+          </p>
+        </div>
+        {/* 03 */}
+        <div className="md:w-110 md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
+          <button className="w-fit rounded-[100px] text-black text-[13px] light:text-white bg-white light:bg-black p-2 ">
+            03
+          </button>
+          <h1 className="mt-10">Creative Design Service</h1>
+          <p className="font-light">
+            from eye-catching visuals to intuitive user experiences, our
+            <br /> creative design services breath life into your brand,
+            ensuring
+            <br />
+            measurable interactions that resonate with your audience.
+          </p>
+        </div>
+        {/* 04 */}
+        <div className="md:w-80 md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
+          <button className="w-fit rounded-[100px] text-black text-[13px] light:text-white bg-white light:bg-black p-2 ">
+            04
+          </button>
+          <h1 className="mt-10">E-Commerce</h1>
+          <p className="font-light">
+            Elevate your online metal experience
+            <br />
+            with our comprehensive e-commece
+            <br />
+            solutions, from user-friendly
+            <br />
+            intuituion to secure payment
+            <br />
+            gateways, we empower businesses to
+            <br />
+            threive in the digital marketplace.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
