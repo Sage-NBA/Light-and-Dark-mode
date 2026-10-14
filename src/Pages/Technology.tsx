@@ -47,7 +47,7 @@ function Home() {
         </p>
       </div>
       {/* Boxes */}
-      <section className=" ">
+      <section className="md:grid md:grid-cols-[480px_680px] md:justify-center gap-2">
         <div className="md:w-120 md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
           <button className="w-fit rounded-[100px] text-black text-[13px] light:text-white bg-white light:bg-black p-2 ">
             01
@@ -65,7 +65,7 @@ function Home() {
           <button className="w-fit rounded-[100px] text-black text-[13px] light:text-white bg-white light:bg-black p-2 ">
             02
           </button>
-          <h1 className="mt-20">Digital Marketting Strategies</h1>
+          <h1 className="mt-40">Digital Marketting Strategies</h1>
           <p className="font-light">
             Harness the power of targeted digital campainge designed to maximize
             your
