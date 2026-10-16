@@ -24,8 +24,10 @@ function Navbar() {
           <p>
             <Link to="/Technology">Technology</Link>
           </p>
-          <p>Features</p>
-          <p>Pricing</p>
+          <p>
+            <Link to="/Features">Features</Link>
+          </p>
+
           <p>FAQ</p>
         </section>
 

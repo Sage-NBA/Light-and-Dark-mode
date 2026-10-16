@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Technology from "./Pages/Technology.tsx";
 import Home from "./Pages/Home.tsx";
+import Features from "./Pages/Features.tsx";
 
 function App() {
   const [lightMode, setLightMode] = useState(false);
@@ -30,6 +31,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Technology" element={<Technology />} />
+        <Route path="/Features" element={<Features />} />
       </Routes>
     </div>
   );
