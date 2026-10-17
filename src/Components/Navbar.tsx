@@ -31,7 +31,7 @@ function Navbar() {
 
         <div className="flex items-center gap-2 w-fit h-fit bg-white/20 light:bg-black/10 py-3 px-4 rounded-[30px]">
           <User />
-          <p>Create Account</p>
+          <Link to="/Create">Create Account</Link>
         </div>
       </div>
 
@@ -74,7 +74,7 @@ function Navbar() {
 
             <div className="flex items-center gap-2 bg-white/20 light:bg-black/10 py-3 px-4 rounded-[30px]">
               <User size={20} />
-              <p>Create Account</p>
+              <Link to="/Create">Create Account</Link>
             </div>
           </div>
         )}

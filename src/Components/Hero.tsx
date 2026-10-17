@@ -4,7 +4,7 @@ function Hero() {
   return (
     <div className="text-white light:text-black text-center md:py-20 space-y-5 items-center justify-center">
       {/* button */}
-      <p className="hidden md:ml-150 md:flex light:bg-black/30 items-center gap-2 w-fit h-fit bg-white/20 py-1 px-4 rounded-[20px]">
+      <p className="hidden md:ml-130 md:flex light:bg-black/30 items-center gap-2 w-fit h-fit bg-white/20 py-1 px-4 rounded-[20px]">
         <Astroid />
         <p>Trusted Platform</p>
       </p>
