@@ -25,7 +25,7 @@ function End() {
               src="Images/chat.jpeg"
             />
           </p>
-          <p>ChatGPT did this pics.</p>
+          <p>Don't stop just yet.</p>
         </div>
         {/* another*/}
         <div className="flex items-center light:bg-black/30 bg-white/20 rounded p-5 justify-center gap-5">
@@ -33,10 +33,10 @@ function End() {
           <p className="w-20 h-20">
             <img
               className="w-full h-full object-cover object-center"
-              src="Images/kosi.png"
+              src="Images/com.jpeg"
             />
           </p>
-          <p>ChatGPT did this pics.</p>
+          <p>Keep trying, keep up.</p>
         </div>
         {/* another */}
         <div className="flex items-center light:bg-black/30 bg-white/20 rounded p-5 justify-center gap-5">
@@ -44,12 +44,11 @@ function End() {
           <p className="w-20 h-20">
             <img
               className="w-full h-full object-cover object-center"
-              src="Images/small.jpg"
+              src="Images/white.jpeg"
             />
           </p>
-          <p>ChatGPT did this pics.</p>
+          <p>Emmanuel Samuel.</p>
         </div>
-       
       </section>
     </div>
   );

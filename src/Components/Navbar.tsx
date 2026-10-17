@@ -27,8 +27,6 @@ function Navbar() {
           <p>
             <Link to="/Features">Features</Link>
           </p>
-
-          <p>FAQ</p>
         </section>
 
         <div className="flex items-center gap-2 w-fit h-fit bg-white/20 light:bg-black/10 py-3 px-4 rounded-[30px]">
@@ -64,11 +62,15 @@ function Navbar() {
         {/* MOBILE MENU */}
         {menuOpen && (
           <div className="mt-5 flex flex-col items-center gap-5 py-6 bg-white/10 light:bg-black/5 rounded-[20px]">
-            <p>Home</p>
-            <p>Technology</p>
-            <p>Features</p>
-            <p>Pricing</p>
-            <p>FAQ</p>
+            <p className="cursor-pointer">
+              <Link to="/">Home</Link>
+            </p>
+            <p>
+              <Link to="/Technology">Technology</Link>
+            </p>
+            <p>
+              <Link to="/Features">Features</Link>
+            </p>
 
             <div className="flex items-center gap-2 bg-white/20 light:bg-black/10 py-3 px-4 rounded-[30px]">
               <User size={20} />

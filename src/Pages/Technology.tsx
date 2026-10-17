@@ -14,7 +14,7 @@ function Home() {
         <span className="text-blue-500 md:pl-100">AGENCY</span>
       </h1>
       {/* Headends */}
-      <div className="w-fit ml-auto md:mr-50">
+      <div className="w-fit p-5 ml-auto md:mr-50">
         <p className="text-[13px]">
           Unlock your digital potential with tech web production agency. We
           offer
@@ -24,11 +24,11 @@ function Home() {
           to elevate your online presence and drive measurable results.
         </p>
         {/* Buttons */}
-        <section className="flex gap-1">
+        <section className="md:flex gap-1 hidden">
           <div className="w-fit text-[13px] text-black light:text-white bg-white light:bg-black py-2 px-4 rounded-[30px]">
             <p>Services</p>
           </div>
-          <button className="w-fit rounded-[100px] text-black light:text-white bg-white light:bg-black p-2 ">
+          <button className="w-fit text-[10px] rounded-[100px] text-black light:text-white bg-white light:bg-black p-2 ">
             <ArrowRight />
           </button>
         </section>
@@ -48,7 +48,7 @@ function Home() {
       </div>
       {/* Boxes */}
       <section className="md:grid md:grid-cols-[480px_680px] md:justify-center gap-2">
-        <div className="md:w-120 md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
+        <div className="md:w-120 hover:bg-white/50 cursor-pointer md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
           <button className="w-fit rounded-[100px] text-black text-[13px] light:text-white bg-white light:bg-black p-2 ">
             01
           </button>
@@ -61,7 +61,7 @@ function Home() {
           </p>
         </div>
         {/* 02 */}
-        <div className="md:w-170 md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
+        <div className="md:w-170 hover:bg-white/50 cursor-pointer md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
           <button className="w-fit rounded-[100px] text-black text-[13px] light:text-white bg-white light:bg-black p-2 ">
             02
           </button>
@@ -76,7 +76,7 @@ function Home() {
           </p>
         </div>
         {/* 03 */}
-        <div className="md:w-110 md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
+        <div className="md:w-110 hover:bg-white/50 cursor-pointer md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
           <button className="w-fit rounded-[100px] text-black text-[13px] light:text-white bg-white light:bg-black p-2 ">
             03
           </button>
@@ -90,7 +90,7 @@ function Home() {
           </p>
         </div>
         {/* 04 */}
-        <div className="md:w-80 md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
+        <div className="md:w-80 hover:bg-white/50 cursor-pointer md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
           <button className="w-fit rounded-[100px] text-black text-[13px] light:text-white bg-white light:bg-black p-2 ">
             04
           </button>
