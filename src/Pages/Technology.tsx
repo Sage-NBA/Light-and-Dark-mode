@@ -1,117 +1,97 @@
 import { ArrowRight } from "lucide-react";
 
-function Home() {
+function Technology() {
+  const services = [
+    {
+      num: "01",
+      title: "Web Development",
+      colSpan: "lg:col-span-5",
+      desc: "Our expert team crafts bespoke websites tailored to your brand's needs, ensuring seamless functionality and stunning design to captivate your audience.",
+    },
+    {
+      num: "02",
+      title: "Digital Marketing Strategies",
+      colSpan: "lg:col-span-7",
+      desc: "Harness the power of targeted digital campaigns designed to maximize your online reach and drive conversions, with a data-driven approach delivering measurable results.",
+    },
+    {
+      num: "03",
+      title: "Creative Design Services",
+      colSpan: "lg:col-span-7",
+      desc: "From eye-catching visuals to intuitive user experiences, our creative design services breathe life into your brand, ensuring memorable interactions that resonate.",
+    },
+    {
+      num: "04",
+      title: "E-Commerce Solutions",
+      colSpan: "lg:col-span-5",
+      desc: "Elevate your online retail experience with comprehensive e-commerce architectures, from user-friendly checkout flows to secure multi-currency payment gateways.",
+    },
+  ];
+
   return (
-    <div>
-      <h1 className="md:text-9xl text-5xl text-center font-light">
-        {" "}
-        <span className="pr-40">THE TECH</span>
-        <br />
-        <span className="text-blue-500 md:pl-30">WEB</span>
-        <br />
-        PRODUCTION
-        <br />
-        <span className="text-blue-500 md:pl-100">AGENCY</span>
-      </h1>
-      {/* Headends */}
-      <div className="w-fit p-5 ml-auto md:mr-50">
-        <p className="text-[13px]">
-          Unlock your digital potential with tech web production agency. We
-          offer
-          <br /> innotice solutions in web development, degital marketing and
-          creative design
-          <br />
-          to elevate your online presence and drive measurable results.
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-14 md:py-20 text-white light:text-black space-y-12 sm:space-y-16">
+      {/* EDITORIAL STAGGERED HEADLINE */}
+      <div className="text-center sm:text-left flex flex-col font-light text-4xl sm:text-6xl md:text-8xl lg:text-9xl tracking-tight leading-none select-none">
+        <span className="sm:pl-0">THE TECH</span>
+        <span className="text-blue-500 sm:pl-10 md:pl-20 lg:pl-32">WEB</span>
+        <span className="sm:pl-4 md:pl-8 lg:pl-16">PRODUCTION</span>
+        <span className="text-blue-500 sm:pl-16 md:pl-32 lg:pl-56">AGENCY</span>
+      </div>
+
+      {/* INTRO SUMMARY & ACTION */}
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 max-w-4xl ml-auto pt-6 border-t border-white/10 light:border-black/10">
+        <p className="text-sm sm:text-base text-white/75 light:text-black/75 font-light leading-relaxed max-w-xl">
+          Unlock your digital potential with our web production agency. We deliver innovative solutions in web development, digital marketing, and creative design to elevate your online presence and drive measurable results.
         </p>
-        {/* Buttons */}
-        <section className="md:flex gap-1 hidden">
-          <div className="w-fit text-[13px] text-black light:text-white bg-white light:bg-black py-2 px-4 rounded-[30px]">
-            <p>Services</p>
+
+        <div className="flex items-center gap-2 self-start sm:self-auto shrink-0">
+          <div className="text-xs sm:text-sm font-semibold bg-white text-black light:bg-black light:text-white py-2.5 px-5 rounded-full">
+            <span>Services</span>
           </div>
-          <button className="w-fit text-[10px] rounded-[100px] text-black light:text-white bg-white light:bg-black p-2 ">
-            <ArrowRight />
+          <button
+            type="button"
+            aria-label="Explore services"
+            className="w-10 h-10 rounded-full bg-white text-black light:bg-black light:text-white flex items-center justify-center hover:scale-110 active:scale-95 transition-transform cursor-pointer"
+          >
+            <ArrowRight size={18} />
           </button>
-        </section>
+        </div>
       </div>
-      {/* services */}
-      <div className="p-10">
-        {" "}
-        <h1 className="md:text-5xl text-3xl font-light">Our Services</h1>
-        <p className="font-light">
-          Explore our array of sevices from web development to e-commerce
-          <br />
-          Solutions designed to elevate your online presence and drive success
-          in
-          <br />
-          the digital landscape.
+
+      {/* SERVICES HEADER */}
+      <div className="space-y-2 pt-6 sm:pt-10">
+        <h2 className="text-2xl sm:text-4xl md:text-5xl font-light tracking-tight">
+          Our Services
+        </h2>
+        <p className="text-sm sm:text-base text-white/70 light:text-black/70 font-light max-w-2xl">
+          Explore our array of services from web development to e-commerce solutions designed to elevate your online presence and drive success in the digital landscape.
         </p>
       </div>
-      {/* Boxes */}
-      <section className="md:grid md:grid-cols-[480px_680px] md:justify-center gap-2">
-        <div className="md:w-120 hover:bg-white/50 cursor-pointer md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
-          <button className="w-fit rounded-[100px] text-black text-[13px] light:text-white bg-white light:bg-black p-2 ">
-            01
-          </button>
-          <h1 className="mt-40">Web Development</h1>
-          <p className="font-light">
-            Our expert team crafts bespoke websites tailored to
-            <br /> your brand's need. ensuring seamless functionality
-            <br />
-            and stunning design to captivate your audience.
-          </p>
-        </div>
-        {/* 02 */}
-        <div className="md:w-170 hover:bg-white/50 cursor-pointer md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
-          <button className="w-fit rounded-[100px] text-black text-[13px] light:text-white bg-white light:bg-black p-2 ">
-            02
-          </button>
-          <h1 className="mt-40">Digital Marketting Strategies</h1>
-          <p className="font-light">
-            Harness the power of targeted digital campainge designed to maximize
-            your
-            <br /> online reach and drive conversions. with our data-driven
-            appraoch delivery
-            <br />
-            measurable results every time.
-          </p>
-        </div>
-        {/* 03 */}
-        <div className="md:w-110 hover:bg-white/50 cursor-pointer md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
-          <button className="w-fit rounded-[100px] text-black text-[13px] light:text-white bg-white light:bg-black p-2 ">
-            03
-          </button>
-          <h1 className="mt-10">Creative Design Service</h1>
-          <p className="font-light">
-            from eye-catching visuals to intuitive user experiences, our
-            <br /> creative design services breath life into your brand,
-            ensuring
-            <br />
-            measurable interactions that resonate with your audience.
-          </p>
-        </div>
-        {/* 04 */}
-        <div className="md:w-80 hover:bg-white/50 cursor-pointer md:p-10 p-5 w-fit rounded-[30px] p-3 light:border-black border-2 border-white">
-          <button className="w-fit rounded-[100px] text-black text-[13px] light:text-white bg-white light:bg-black p-2 ">
-            04
-          </button>
-          <h1 className="mt-10">E-Commerce</h1>
-          <p className="font-light">
-            Elevate your online metal experience
-            <br />
-            with our comprehensive e-commece
-            <br />
-            solutions, from user-friendly
-            <br />
-            intuituion to secure payment
-            <br />
-            gateways, we empower businesses to
-            <br />
-            threive in the digital marketplace.
-          </p>
-        </div>
+
+      {/* RESPONSIVE ASYMMETRIC GRID */}
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5 sm:gap-6">
+        {services.map((item) => (
+          <div
+            key={item.num}
+            className={`${item.colSpan} w-full p-6 sm:p-8 rounded-3xl border border-white/20 light:border-black/20 bg-white/5 light:bg-black/5 hover:bg-white/10 light:hover:bg-black/10 transition-all duration-300 flex flex-col justify-between min-h-[260px] sm:min-h-[300px] cursor-pointer group`}
+          >
+            <div className="w-10 h-10 rounded-full text-black light:text-white bg-white light:bg-black flex items-center justify-center text-xs sm:text-sm font-semibold shadow-sm group-hover:scale-110 transition-transform">
+              {item.num}
+            </div>
+
+            <div className="mt-8 sm:mt-12 space-y-2">
+              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-white light:text-black">
+                {item.title}
+              </h3>
+              <p className="text-sm sm:text-base text-white/70 light:text-black/70 font-light leading-relaxed">
+                {item.desc}
+              </p>
+            </div>
+          </div>
+        ))}
       </section>
     </div>
   );
 }
 
-export default Home;
+export default Technology;

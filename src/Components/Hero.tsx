@@ -1,33 +1,39 @@
 import { Astroid } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <div className="text-white light:text-black text-center md:py-20 space-y-5 items-center justify-center">
-      {/* button */}
-      <p className="hidden md:ml-130 md:flex light:bg-black/30 items-center gap-2 w-fit h-fit bg-white/20 py-1 px-4 rounded-[20px]">
-        <Astroid />
-        <p>Trusted Platform</p>
-      </p>
-      {/* main */}
-      <section className="space-y-7">
-        <h1 className="text-2xl md:text-6xl font-light ">
-          Revolutionize Your Trasactions
-          <br /> with Secure Blockchain Solutions
-        </h1>
-        <p className="text-[10px] md:text-[15px]">
-          Experience the future of digital transactions with our
-          State-of-the-art blocklist technology. Our Secure,
-          <br />
-          decentralized platform ensures your data is protected, transparent,
-          immutable, and protected against fraud.
-        </p>
-      </section>
-      <div>
-        <button className="md:text-[20px] md:font-semibold w-fit h-fit text-black bg-white py-2 px-5 md:px-10 rounded-[50px]">
-          Get Started
-        </button>
+    <section className="relative text-white light:text-black text-center py-12 sm:py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto flex flex-col items-center justify-center space-y-6 sm:space-y-8">
+      {/* BADGE */}
+      <div className="inline-flex items-center gap-2 bg-white/15 light:bg-black/10 border border-white/20 light:border-black/15 py-1.5 px-4 rounded-full text-xs sm:text-sm font-medium shadow-sm transition-transform hover:scale-105">
+        <Astroid className="w-4 h-4 text-blue-400" />
+        <span>Trusted Platform</span>
       </div>
-    </div>
+
+      {/* HEADLINE & SUBTITLE */}
+      <div className="space-y-4 sm:space-y-6 max-w-4xl mx-auto">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight leading-tight">
+          Revolutionize Your Transactions
+          <span className="block mt-1 sm:mt-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400 light:from-blue-600 light:to-purple-600">
+            with Secure Blockchain Solutions
+          </span>
+        </h1>
+
+        <p className="text-sm sm:text-base md:text-lg text-white/75 light:text-black/75 max-w-2xl mx-auto font-light leading-relaxed px-2">
+          Experience the future of digital transactions with our state-of-the-art blockchain technology. Our secure, decentralized platform ensures your data is protected, transparent, immutable, and safeguarded against fraud.
+        </p>
+      </div>
+
+      {/* CTA BUTTON */}
+      <div className="pt-2 sm:pt-4">
+        <Link
+          to="/Create"
+          className="inline-block text-sm sm:text-base md:text-lg font-medium text-black bg-white light:bg-black light:text-white py-3 sm:py-3.5 px-7 sm:px-10 rounded-full shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer"
+        >
+          Get Started
+        </Link>
+      </div>
+    </section>
   );
 }
 
