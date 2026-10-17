@@ -1,15 +1,4 @@
-import Card from "./Card";
 function End() {
-  const cards = [
-    { text: "fuck me hard", head: "give me head naw", children: "yes daddy" },
-
-    {
-      text: "kosi fuck me hard",
-      head: "spyce give me head naw",
-      children: "i shouted yes daddy",
-    },
-  ];
-
   return (
     <div className="md:flex text-white light:text-black p-5 items-center md:ml-30 gap-50 justtify-center">
       <h1 className="md:text-7xl text-5xl font-light">
